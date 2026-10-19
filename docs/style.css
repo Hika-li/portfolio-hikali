@@ -411,3 +411,23 @@ html[lang="ja"] .spotlight h3 { font-family: var(--jp); text-transform: none; }
   .footer { display: grid; grid-template-columns: 1fr auto 1fr; }
   .footer > :last-child { justify-self: end; text-align: right; }
 }
+
+/* hero: job titles held so far */
+.roles { list-style: none; margin: 26px 0 0; padding: 0; display: grid; gap: 10px; }
+.roles li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 14px; padding-left: 22px; position: relative; }
+.roles li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 8px; height: 8px; background: var(--gold); transform: rotate(45deg); }
+.roles li:first-child::before { background: var(--crimson); }
+.roles b { font-weight: 800; font-stretch: 108%; font-size: clamp(19px, 2vw, 25px); line-height: 1.2; color: var(--paper); }
+.roles span { font: 500 13px var(--mono); color: var(--muted); }
+html[lang="ja"] .roles b { font-family: var(--jp); font-stretch: normal; font-size: clamp(17px, 1.8vw, 22px); }
+html[lang="ja"] .roles span { font-family: var(--mono), var(--jp); }
+.hero .lead { margin-top: 26px; }
+
+/* accessibility: three deliverables */
+.spot-steps { list-style: none; margin: 22px 0 6px; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; counter-reset: step; }
+.spot-steps li { counter-increment: step; padding: 16px 16px 18px; background: rgba(4, 8, 24, .35); border: 1px solid var(--line); border-radius: 8px; }
+.spot-steps b { display: block; margin-bottom: 6px; font-weight: 800; font-size: 16px; color: var(--paper); }
+.spot-steps b::before { content: "0" counter(step); margin-right: 10px; font: 700 12px var(--mono); color: var(--gold); }
+.spot-steps span { display: block; font-size: 14px; line-height: 1.5; color: var(--muted); }
+html[lang="ja"] .spot-steps b { font-family: var(--jp); }
+@media (max-width: 760px) { .spot-steps { grid-template-columns: 1fr; } }
