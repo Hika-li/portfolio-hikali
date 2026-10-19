@@ -39,6 +39,11 @@ def relink(s, prefix):
             return m.group(0)
         return f'{attr}="{prefix}{url}"'
 
+    def fix_srcset(m):
+        parts = [p.strip() for p in m.group(1).split(",")]
+        return 'srcset="' + ", ".join(p if re.match(r"(https?:|/|data:)", p) else prefix + p for p in parts) + '"'
+
+    s = re.sub(r'\bsrcset="([^"]*)"', fix_srcset, s)
     return re.sub(r'\b(src|href)="([^"]*)"', fix, s)
 
 
