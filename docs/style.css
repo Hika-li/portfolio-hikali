@@ -139,7 +139,7 @@ html[lang="ja"] .btn { font-family: var(--jp); }
 .kana { writing-mode: vertical-rl; font-family: var(--jp); font-size: clamp(22px, 2.4vw, 34px); font-weight: 700; letter-spacing: .25em; color: var(--muted); }
 .hanko { font-family: var(--jp); font-weight: 700; color: var(--crimson-light); border: 3px solid var(--crimson); border-radius: 6px; padding: 8px 6px; font-size: 20px; line-height: 1.15; text-align: center; transform: rotate(4deg); background: rgba(198, 42, 67, .1); }
 
-.stats { display: grid; grid-template-columns: repeat(4, 1fr); margin: clamp(48px, 7vw, 88px) 0 0; border-top: 1px solid var(--line); }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); margin: clamp(48px, 7vw, 88px) 0 0; border-top: 1px solid var(--line); }
 .stats > div { padding: 22px 20px 0 0; }
 .stats > div + div { padding-left: 20px; border-left: 1px solid var(--line); }
 .stats dt { font-weight: 900; font-stretch: 125%; font-size: clamp(32px, 4.4vw, 56px); line-height: 1; color: var(--gold); }
@@ -382,9 +382,8 @@ html[lang="ja"] .field label { font-family: var(--jp); letter-spacing: .02em; }
   .hero-side { display: none; }
   .name { font-size: 11.2vw; }
   .section-head h2::after { margin-left: 8px; font-size: 14px; }
-  .stats { grid-template-columns: 1fr 1fr; }
-  .stats > div:nth-child(3) { padding-left: 0; border-left: 0; }
-  .stats > div:nth-child(n+3) { padding-top: 22px; }
+  .stats > div { padding-right: 10px; }
+  .stats > div + div { padding-left: 12px; }
   .shipped, .projects, .jams, .craft { grid-template-columns: 1fr; }
   .gallery { grid-template-columns: 1fr 1fr; }
   .gallery img:first-child { grid-column: 1 / -1; }
