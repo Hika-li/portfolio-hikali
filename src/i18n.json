@@ -30,7 +30,7 @@
     "nav.japan": "Japan",
     "nav.contact": "Contact",
     "hero.eyebrow": "Looking for a Producer or Game Designer role in Japan",
-    "hero.lead": "Today I work freelance as a producer and game designer for indie teams, and I teach production and game design at Ynov Campus, from first-year Bachelor to Master's level.<br><br>Before that, I spent two years at Bandai Namco Entertainment Europe as Global Associate Producer on <b>Little Nightmares</b>, in the core team that ran the franchise worldwide. Three games shipped on my watch, across console, PC, VR and mobile.<br><br>And I still code my own prototypes, to tell the stories I want to tell.",
+    "hero.lead": "Today I work freelance as a producer and game designer for indie teams, and I teach production and game design at Ynov Campus, from first-year Bachelor to Master's level.<br><br>Before that, I spent two years at Bandai Namco Entertainment Europe as Global Associate Producer on <b>Little Nightmares</b>, in the core team that ran the franchise worldwide, and helped ship three games across console, PC, VR and mobile.<br><br>And I still code my own prototypes, to tell the stories I want to tell.",
     "hero.chip1": "Based in Tokyo",
     "hero.chip2": "Available now",
     "hero.chip3": "FR · EN · 日本語",
@@ -171,7 +171,8 @@
     "career.teach.role": "Visiting Lecturer",
     "career.teach.where": "Lyon and Ynov Connect · teaching remotely from Tokyo",
     "career.teach.p1": "I teach production, game design, level design and programming basics to students from first-year Bachelor to Master's level, and I consult for the school.",
-    "career.teach.p2": "Teaching started well before that. First a programming course on Udemy and my Hika Learn YouTube channel, then client training at Inov'Xper, then volunteer workshops at Ynov while I was doing my own Master's."
+    "career.teach.p2": "Teaching started well before that. First a programming course on Udemy and my Hika Learn YouTube channel, then client training at Inov'Xper, then volunteer workshops at Ynov while I was doing my own Master's.",
+    "career.free.p2": "I also helped Hiqub, a collective of independent creators, as producer and business developer, with gameplay audits, production advice and introductions to people in my network."
   },
   "ja": {
     "meta.title": "サブリ・モハマディ | プロデューサー / ゲームデザイナー",
@@ -322,7 +323,8 @@
     "career.teach.role": "非常勤講師",
     "career.teach.where": "リヨン校・Ynov Connect · 東京からリモートで担当",
     "career.teach.p1": "学士1年次から修士2年次までの学生に、プロデュース、ゲームデザイン、レベルデザイン、プログラミングの基礎を指導。学校へのコンサルティングも担当。",
-    "career.teach.p2": "教える活動の原点は、Udemyのプログラミング講座とYouTubeチャンネル「Hika Learn」。その後、Inov'Xperでの顧客向け研修、修士課程在学中のYnovでのボランティアワークショップを経て現在に至る。"
+    "career.teach.p2": "教える活動の原点は、Udemyのプログラミング講座とYouTubeチャンネル「Hika Learn」。その後、Inov'Xperでの顧客向け研修、修士課程在学中のYnovでのボランティアワークショップを経て現在に至る。",
+    "career.free.p2": "インディークリエイター集団「Hiqub」でも、プロデューサー兼事業開発として、ゲームプレイの監査、制作面での助言、人脈の紹介を担当。"
   },
   "fr": {
     "meta.title": "Sabri Mohamadi | Producer & Game Designer",
@@ -473,6 +475,7 @@
     "career.teach.role": "Intervenant &amp; Formateur",
     "career.teach.where": "Lyon et Ynov Connect · à distance depuis Tokyo",
     "career.teach.p1": "J'enseigne la production, le game design, le level design et les fondamentaux de la programmation, du Bachelor 1 au Master 2, et j'accompagne l'école en tant que consultant.",
-    "career.teach.p2": "La transmission a commencé bien avant. D'abord avec un cours de programmation sur Udemy et ma chaîne YouTube Hika Learn, ensuite avec des formations clients chez Inov'Xper, puis lors d'ateliers bénévoles chez Ynov pendant mon Master."
+    "career.teach.p2": "La transmission a commencé bien avant. D'abord avec un cours de programmation sur Udemy et ma chaîne YouTube Hika Learn, ensuite avec des formations clients chez Inov'Xper, puis lors d'ateliers bénévoles chez Ynov pendant mon Master.",
+    "career.free.p2": "J'ai également accompagné Hiqub, un collectif de créateurs indépendants, en tant que Producer et Business Developer, avec des audits de gameplay, des conseils en production et des mises en relation."
   }
 }

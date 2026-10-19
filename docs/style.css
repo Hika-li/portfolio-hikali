@@ -304,7 +304,7 @@ html[lang="ja"] .contact-title { text-transform: none; font-family: var(--jp); l
 .contact-cta { margin-top: 28px; display: flex; justify-content: center; }
 .contact-links { list-style: none; padding: 0; margin: 28px 0 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
 
-.page-contact { max-width: 1100px; margin: 0 auto; padding: clamp(48px, 7vw, 96px) var(--gutter) clamp(72px, 9vw, 112px); display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: start; }
+.page-contact { max-width: var(--max); min-height: calc(100vh - 162px); margin: 0 auto; padding: clamp(48px, 7vw, 96px) var(--gutter) clamp(72px, 9vw, 112px); display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: start; }
 .page-contact h1 { margin: 0 0 16px; font-weight: 900; font-stretch: 125%; text-transform: uppercase; font-size: clamp(40px, 6vw, 76px); line-height: .95; color: var(--paper); }
 html[lang="ja"] .page-contact h1 { font-family: var(--jp); text-transform: none; }
 .page-contact .intro { color: var(--muted); font-size: 17px; margin: 0 0 26px; }
@@ -414,12 +414,13 @@ html[lang="ja"] .spotlight h3 { font-family: var(--jp); text-transform: none; }
 
 /* hero: job titles held so far */
 .roles { list-style: none; margin: 26px 0 0; padding: 0; display: grid; gap: 10px; }
-.roles li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 14px; padding-left: 22px; position: relative; }
-.roles li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 8px; height: 8px; background: var(--gold); transform: rotate(45deg); }
+.roles li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 14px; padding-left: 22px; position: relative; font-size: clamp(19px, 2vw, 25px); }
+.roles li::before { content: ""; position: absolute; left: 2px; top: calc(.6em - 4px); width: 8px; height: 8px; background: var(--gold); transform: rotate(45deg); }
 .roles li:first-child::before { background: var(--crimson); }
-.roles b { font-weight: 800; font-stretch: 108%; font-size: clamp(19px, 2vw, 25px); line-height: 1.2; color: var(--paper); }
+.roles b { font-weight: 800; font-stretch: 108%; font-size: 1em; line-height: 1.2; color: var(--paper); }
 .roles span { font: 500 13px var(--mono); color: var(--muted); }
-html[lang="ja"] .roles b { font-family: var(--jp); font-stretch: normal; font-size: clamp(17px, 1.8vw, 22px); }
+html[lang="ja"] .roles li { font-size: clamp(17px, 1.8vw, 22px); }
+html[lang="ja"] .roles b { font-family: var(--jp); font-stretch: normal; }
 html[lang="ja"] .roles span { font-family: var(--mono), var(--jp); }
 .hero .lead { margin-top: 26px; }
 
@@ -435,3 +436,5 @@ html[lang="ja"] .spot-steps b { font-family: var(--jp); }
 /* hero status line: says plainly that I'm looking for a job */
 .eyebrow-status { font: 700 clamp(15px, 1.4vw, 18px) var(--sans); text-transform: none; letter-spacing: .01em; color: #b9f5cf; }
 html[lang="ja"] .eyebrow-status { font-family: var(--jp); }
+.eyebrow-status { align-items: flex-start; }
+.eyebrow-status .dot { flex: none; margin-top: .45em; }
