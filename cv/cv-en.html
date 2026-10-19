@@ -13,9 +13,9 @@
 :root { --navy: #0f2150; --ink: #141c33; --muted: #5b6684; --line: #e2e6ef; --gem: #b8263c; --gold: #9a7417; --side: #f2f4f9; }
 * { box-sizing: border-box; }
 html, body { margin: 0; background: #fff; }
-body { width: 210mm; height: 297mm; overflow: hidden; font-family: "Archivo", "Zen Kaku Gothic New", sans-serif; color: var(--ink); font-size: 8.1pt; line-height: 1.4; }
+body { width: 210mm; height: 297mm; overflow: hidden; font-family: "Archivo", "Zen Kaku Gothic New", sans-serif; color: var(--ink); font-size: 7.95pt; line-height: 1.38; }
 .page { display: grid; grid-template-columns: 1fr 62mm; grid-template-rows: 297mm; height: 297mm; overflow: hidden; }
-main { padding: 9mm 9mm 7mm 12mm; }
+main { padding: 8mm 9mm 6mm 12mm; }
 aside { position: relative; background: var(--side); color: var(--ink); padding: 9mm 8mm 7mm 8mm; display: flex; flex-direction: column; gap: 3.7mm; }
 aside::before { content: ""; position: absolute; left: -2.4mm; top: 0; bottom: 0; width: 2.4mm; background: conic-gradient(from 225deg at 100% 50%, var(--side) 90deg, transparent 0) 0 0 / 2.4mm 4.8mm repeat-y; }
 
@@ -31,13 +31,13 @@ h2 { display: flex; align-items: center; gap: 2.2mm; margin: 0 0 1.7mm; font-wei
 h2::before { content: ""; width: 2.2mm; height: 2.2mm; background: var(--gem); transform: rotate(45deg); border-radius: .3mm; flex: none; }
 h2 small { font: 500 6.8pt "JetBrains Mono"; text-transform: none; letter-spacing: 0; color: var(--muted); }
 h2::after { content: ""; flex: 1; height: .25mm; background: var(--line); }
-section { margin-bottom: 3mm; }
-.profile { margin: 0; font-size: 8.5pt; }
+section { margin-bottom: 2.6mm; }
+.profile { margin: 0; font-size: 8.3pt; }
 .profile b, .job li b, .projline b, .small b { font-weight: 800; color: var(--navy); }
 
 .games { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2mm; }
 .game { border: .3mm solid var(--line); border-radius: 1.6mm; padding: 2.2mm 2.4mm; position: relative; overflow: hidden; background: #fff; }
-.game img { display: block; width: calc(100% + 4.8mm); margin: -2.2mm -2.4mm 1.6mm; height: 12mm; object-fit: cover; }
+.game img { display: block; width: calc(100% + 4.8mm); margin: -2.2mm -2.4mm 1.4mm; height: 10mm; object-fit: cover; }
 .games-note { margin: 1.4mm 0 0; font-size: 7pt; color: var(--muted); }
 .g-date { font: 600 6.9pt "JetBrains Mono"; color: var(--gold); }
 .g-title { margin: .5mm 0 .3mm; font-weight: 900; font-stretch: 105%; text-transform: uppercase; font-size: 8.3pt; line-height: 1.05; color: var(--navy); }
@@ -90,14 +90,14 @@ aside h3::before { content: ""; width: 1.6mm; height: 1.6mm; background: var(--g
     <h1 class="name">Sabri<br>Mohamadi</h1>
     <div class="kana">サブリ・モハマディ</div>
     <p class="role">Producer · Game Designer <span class="aka">aka Hikali</span></p>
-    <div class="status">Based in Tokyo · Available now</div>
+    <div class="status">Based in Tokyo · Available now · Open to remote or relocation</div>
     <div class="hanko">サ<br>ブ<br>リ</div>
     <img class="mark" src="../docs/assets/brand/hikalith-mark.png" alt="">
   </header>
 
   <section>
     <h2>Profile</h2>
-    <p class="profile">I was <b>Global Associate Producer at Bandai Namco Entertainment Europe</b> on the <b>Little Nightmares</b> franchise, in the main team that drove its worldwide strategy. Three games shipped on console, PC, VR and mobile. Today I'm a <b>freelance Producer and Game Designer</b> and I teach from first-year Bachelor to second-year Master. I started out as a programmer, I still code my own prototypes, and I live in Tokyo, where I also make videos about games and Japan as <b>Hikali</b>.</p>
+    <p class="profile">Producer and Game Designer based in Tokyo. I work freelance with indie teams and teach Producing and Game Design at Ynov Campus. From 2023 to 2025 I was <b>Global Associate Producer on Little Nightmares at Bandai Namco Entertainment Europe</b>, part of the core team behind the franchise's worldwide strategy, and helped ship <b>three games across console, PC, VR and mobile</b>. I trained as a programmer and still code and prototype my own games.</p>
   </section>
 
   <section>
@@ -125,7 +125,7 @@ aside h3::before { content: ""; width: 1.6mm; height: 1.6mm; background: var(--g
         <div class="g-plat">iOS · Android</div>
       </div>
     </div>
-    <p class="games-note">Shipped on 12 platforms: PS5, PS4, Xbox Series, Xbox One, Switch, Switch 2, PC, iOS, Android, PS VR2, Meta Quest and SteamVR. The Little Nightmares series has sold over 20 million copies across all titles (Bandai Namco, June 2025). Images © Bandai Namco Entertainment Europe.</p>
+    <p class="games-note">The Little Nightmares series has sold more than 20 million copies across all games (Bandai Namco, June 2025). Images © Bandai Namco Entertainment Europe.</p>
   </section>
 
   <section>
@@ -134,40 +134,45 @@ aside h3::before { content: ""; width: 1.6mm; height: 1.6mm; background: var(--g
       <div class="job-head"><div class="job-title">Freelance Producer &amp; Game Designer <em>· Hikalith</em></div><div class="job-when">JAN 2025 – NOW</div></div>
       <div class="job-where">Lyon, then Tokyo</div>
       <ul>
-        <li>Studios bring me in to reinforce production. I coordinate, report and set up their <b>project tracking</b> on Jira, SharePoint and Teams.</li>
-        <li>I support their game design on prototypes, mechanics and player experience, and advise them on <b>game accessibility</b>.</li>
-        <li>I'm <b>producer and business developer</b> for the Hiqub collective.</li>
-        <li>I <b>teach Producing, Game Design, Level Design and programming fundamentals</b>, from Bachelor 1 to Master 2, at Ynov Campus Lyon and Ynov Connect, and consult for the school.</li>
+        <li>Indie creators, collectives and small studios: <b>production setup and tracking</b>, playtests, <b>gameplay and accessibility reviews</b>.</li>
+        <li>Worked with the Hiqub collective of independent creators as <b>Producer and Business Developer</b> (gameplay reviews, production advice, introductions).</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head"><div class="job-title">Visiting Lecturer <em>· Ynov Campus</em></div><div class="job-when">2025 – NOW</div></div>
+      <div class="job-where">Lyon and Ynov Connect · teaching remotely from Tokyo</div>
+      <ul>
+        <li>Teach <b>Producing, Game Design, Level Design and programming fundamentals</b>, from first-year Bachelor's to Master's level, and consult for the school.</li>
       </ul>
     </div>
     <div class="job">
       <div class="job-head"><div class="job-title">Global Associate Producer <em>· Bandai Namco Entertainment Europe</em></div><div class="job-when">JUL 2023 – JUL 2025</div></div>
       <div class="job-where">Lyon, France · Little Nightmares franchise</div>
       <ul>
-        <li>Member of the main team that drove the franchise's <b>worldwide strategy</b> on Little Nightmares III, Little Nightmares VR: Altered Echoes and the mobile port.</li>
-        <li>Worked with <b>Supermassive Games, Iconik and Playdigious</b>, ports with <b>Engine Software</b>, plus playtest and service vendors.</li>
-        <li>Planned milestones, tracked deliveries and kept QA, analytics, localisation, marketing and communication aligned, then reported to stakeholders and IP holders.</li>
-        <li>Rebuilt our tracking on Jira, Confluence and SharePoint and <b>automated a weekly report that took a full day</b>.</li>
-        <li>Sat on Bandai Namco Europe's <b>accessibility task force</b>, benchmarked the industry and wrote the team's <b>must-have accessibility document</b>. Turned an accessibility audit into a prioritised backlog that shipped.</li>
+        <li>Part of the core team behind the franchise's <b>worldwide strategy</b>. Worked on three projects in parallel with <b>Supermassive Games, Iconik and Playdigious</b>, plus porting work with <b>Engine Software</b>.</li>
+        <li>Tracked milestones and deliveries, kept QA, analytics, localisation, marketing and communications aligned, and reported progress to stakeholders and the IP holder.</li>
+        <li>Worked with <b>Bandai Namco Entertainment in Japan</b>: presented major milestones during their visits and handled requests for demos, assets and feedback.</li>
+        <li>Rebuilt project tracking in Jira, Confluence and SharePoint and <b>automated a weekly report that used to take a full day</b>.</li>
+        <li>Sat on the <b>accessibility task force</b>: benchmarked leading games, wrote the team's <b>must-have accessibility document</b>, turned an audit into a prioritised backlog that shipped.</li>
       </ul>
     </div>
     <div class="job">
       <div class="job-head"><div class="job-title">Production Lead, games incubator <em>· Nightmare Games (Ynov)</em></div><div class="job-when">2022 – 2023 · 6 MO</div></div>
       <ul>
-        <li>Ran the schedule for <b>six game projects and about forty people</b> and coached their leads, some of whom later became my first clients.</li>
+        <li>Ran one schedule for <b>six game projects and around forty people</b> and coached their project leads. A few of them later became my first freelance clients.</li>
       </ul>
     </div>
     <div class="job">
-      <div class="job-head"><div class="job-title">Earlier <em>· work-study during my degrees</em></div><div class="job-when">2020 – 2022</div></div>
+      <div class="job-head"><div class="job-title">Apprenticeships <em>· alongside my degrees</em></div><div class="job-when">2020 – 2022</div></div>
       <ul>
-        <li><b>Consultant &amp; Trainer at Inov'Xper</b> (2021–22), automating client processes with Microsoft 365 and Power Automate. <b>Developer at Boa Concept</b> (2020–21), building UI and internal tools.</li>
+        <li><b>Consultant &amp; Trainer at Inov'Xper</b> (2021–22): automated client processes with Microsoft 365, Power Automate and SharePoint, then trained their teams. <b>Developer at Boa Concept</b> (2020–21): UI and internal tools.</li>
       </ul>
     </div>
   </section>
 
   <section>
-    <h2>Own projects</h2>
-    <p class="projline"><b>NaJiKi</b> <span>(2024, horror, Unity, on hold)</span>, which I designed and produced. It went through several pitch competitions and <b>won funding support on Maghla's show</b>. <b>MyHome?</b> <span>(2020, Bachelor year 3, escape game, Unreal)</span> as technical game designer, plus the jam games <b>The Last Supermarket Before Apocalypse</b> and <b>Le voyage de Mochihiro</b>.</p>
+    <h2>Personal projects</h2>
+    <p class="projline"><b>NaJiKi</b> <span>(2024, horror, Unity, on hold)</span>: Game Designer and Producer. Pitched at competitions, it <b>won funding support on French streamer Maghla's show</b>. <b>MyHome?</b> <span>(2020, Bachelor's year 3, escape game, Unreal)</span>: Technical Game Designer. Game jams: <b>The Last Supermarket Before Apocalypse</b> and <b>Le voyage de Mochihiro</b>.</p>
   </section>
 </main>
 
@@ -188,7 +193,7 @@ aside h3::before { content: ""; width: 1.6mm; height: 1.6mm; background: var(--g
     <h3>Languages</h3>
     <div class="langs">
       <div><div class="l-row">French <span>Native</span></div><div class="bar"><i style="width:100%"></i></div></div>
-      <div><div class="l-row">English <span>C1, used daily</span></div><div class="bar"><i style="width:88%"></i></div></div>
+      <div><div class="l-row">English <span>C1, working language</span></div><div class="bar"><i style="width:88%"></i></div></div>
       <div><div class="l-row">Japanese <span>Conversational</span></div><div class="bar"><i style="width:55%"></i></div>
         <div class="l-note">I understand most spoken Japanese and speak at around B1. I'm taking classes in Tokyo for reading and writing.</div></div>
     </div>
@@ -208,14 +213,14 @@ aside h3::before { content: ""; width: 1.6mm; height: 1.6mm; background: var(--g
   <div>
     <h3>Education</h3>
     <div class="edu">
-      <div><b>Master level, Game Programming &amp; Design</b><span>Ynov Campus Lyon · RNCP level 7 · 2021–23</span></div>
+      <div><b>Master's-level degree, Game Programming &amp; Design</b><span>Ynov Campus Lyon · RNCP level 7 · 2021–23</span></div>
       <div><b>Licence Pro, Project Mgmt &amp; Interactive 3D</b><span>Université Clermont Auvergne (Bachelor's) · 2020–21</span></div>
       <div><b>BTS, Digital Systems (IT &amp; Networks)</b><span>2-year technical degree · 2018–20</span></div>
     </div>
   </div>
   <div>
-    <h3>Hikali, off the clock</h3>
-    <p class="small">On my YouTube channel <b>I am Hika</b> I show life in Japan and places tied to games, and I stream on Twitch. I'm preparing a series of interviews with indie studios in Japan.</p>
+    <h3>Beyond the industry</h3>
+    <p class="small">As <b>Hikali</b>, I make videos about games and everyday life in Japan on my YouTube channel <b>I am Hika</b>, and stream on Twitch. Coming up: interviews with game developers in Japan, starting with indie studios.</p>
   </div>
 </aside>
 </div>
