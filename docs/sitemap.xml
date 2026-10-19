@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.sabri-mohamadi.fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sabri-mohamadi.fr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.sabri-mohamadi.fr/ja/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sabri-mohamadi.fr/fr/"/>
+  </url>
+  <url>
+    <loc>https://www.sabri-mohamadi.fr/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sabri-mohamadi.fr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.sabri-mohamadi.fr/ja/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sabri-mohamadi.fr/fr/"/>
+  </url>
+  <url>
+    <loc>https://www.sabri-mohamadi.fr/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sabri-mohamadi.fr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.sabri-mohamadi.fr/ja/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sabri-mohamadi.fr/fr/"/>
+  </url>
+  <url>
+    <loc>https://www.sabri-mohamadi.fr/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sabri-mohamadi.fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.sabri-mohamadi.fr/ja/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sabri-mohamadi.fr/fr/contact.html"/>
+  </url>
+  <url>
+    <loc>https://www.sabri-mohamadi.fr/ja/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sabri-mohamadi.fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.sabri-mohamadi.fr/ja/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sabri-mohamadi.fr/fr/contact.html"/>
+  </url>
+  <url>
+    <loc>https://www.sabri-mohamadi.fr/fr/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.sabri-mohamadi.fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.sabri-mohamadi.fr/ja/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.sabri-mohamadi.fr/fr/contact.html"/>
+  </url>
+</urlset>

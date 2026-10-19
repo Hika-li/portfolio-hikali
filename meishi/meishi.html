@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Sabri Mohamadi, meishi</title>
+<link rel="stylesheet" href="../cv/fonts/zk/all.css">
+<style>
+@font-face { font-family: "Archivo"; src: url(../cv/fonts/archivo-latin-wdth-normal.woff2) format("woff2-variations"); font-weight: 100 900; font-stretch: 62% 125%; }
+@font-face { font-family: "JetBrains Mono"; src: url(../cv/fonts/jetbrains-mono-latin-wght-normal.woff2) format("woff2-variations"); font-weight: 100 800; }
+@font-face { font-family: "Baloo 2"; src: url(../cv/fonts/baloo-2-latin-wght-normal.woff2) format("woff2-variations"); font-weight: 400 800; }
+/* Japanese standard meishi 91 x 55 mm + 3 mm bleed on every side */
+@page { size: 97mm 61mm; margin: 0; }
+:root { --ink: #0b1430; --paper: #f3eee5; --muted: #ccd5ea; --gold: #e9b949; --crimson: #c62a43; --crimson-light: #ff8193; --band: #070d22; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: "Archivo", "Zen Kaku Gothic New", sans-serif; color: var(--paper); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.card {
+  position: relative; width: 97mm; height: 61mm; overflow: hidden; page-break-after: always;
+  background-color: var(--ink);
+  background-image:
+    radial-gradient(60mm 34mm at 92% -6%, rgba(198, 42, 67, .32), transparent 70%),
+    radial-gradient(50mm 40mm at -8% 70%, rgba(43, 127, 232, .2), transparent 70%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.06' stroke-width='1.2'%3E%3Cpath d='M48 0L96 48L48 96L0 48Z'/%3E%3Cpath d='M48 22L74 48L48 74L22 48Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.card:last-child { page-break-after: auto; }
+/* everything important stays inside the safe area: 3 mm bleed + 3.5 mm margin */
+.safe { position: absolute; inset: 6.5mm 6.5mm 7.5mm 7mm; }
+.zig { position: absolute; left: 0; right: 0; bottom: 0; height: 6mm; background: var(--band); }
+.zig::before { content: ""; position: absolute; left: 0; right: 0; top: -2.4mm; height: 2.5mm; background: conic-gradient(from 135deg at 50% 0, var(--band) 90deg, transparent 0) 0 0 / 4.8mm 2.5mm repeat-x; }
+
+.name { margin: 0; font-weight: 900; font-stretch: 125%; text-transform: uppercase; font-size: 14pt; line-height: .9; letter-spacing: -.01em; color: var(--paper); }
+.aka { margin: 1.3mm 0 0; font: 800 9pt "Baloo 2"; color: var(--gold); line-height: 1; }
+.aka span { color: var(--muted); font-weight: 500; margin-right: .35em; }
+.role { margin: 2.4mm 0 0; font: 800 7pt "Archivo"; font-stretch: 105%; letter-spacing: .08em; text-transform: uppercase; color: var(--paper); display: flex; align-items: center; gap: 1.4mm; }
+.role::before { content: ""; width: 1.5mm; height: 1.5mm; background: var(--crimson); transform: rotate(45deg); flex: none; }
+.desc { margin: 1.1mm 0 0; font-size: 6.8pt; font-weight: 500; line-height: 1.35; color: var(--muted); max-width: 60mm; }
+.desc b { color: var(--paper); font-weight: 700; }
+.contact { position: absolute; left: 0; bottom: 0; margin: 0; padding: 0; list-style: none; font: 600 6.8pt/1.5 "Archivo"; color: var(--paper); }
+.contact li { display: flex; align-items: center; gap: 1.3mm; }
+.contact li::before { content: ""; width: 1.2mm; height: 1.2mm; background: var(--gold); transform: rotate(45deg); flex: none; }
+
+.qr { position: absolute; right: 0; bottom: 0; width: 18mm; text-align: center; }
+.qr .code { background: var(--paper); padding: 1.3mm; border-radius: 1mm; }
+.qr .code img { display: block; width: 100%; height: auto; }
+.qr span { display: block; margin-top: .8mm; font: 800 6pt "Archivo", "Zen Kaku Gothic New"; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); }
+.mark { position: absolute; right: 0; top: 0; width: 9mm; height: 9mm; }
+.hanko { position: absolute; right: 11mm; top: .4mm; font-family: "Zen Kaku Gothic New"; font-weight: 700; color: var(--crimson-light); border: .45mm solid var(--crimson); border-radius: .8mm; padding: .7mm .55mm; font-size: 6pt; line-height: 1.08; text-align: center; transform: rotate(5deg); background: rgba(198, 42, 67, .12); }
+
+/* Japanese side */
+.kana { margin: 0; font-family: "Zen Kaku Gothic New"; font-weight: 700; font-size: 15pt; letter-spacing: .12em; line-height: 1.05; color: var(--paper); }
+.latin { margin: 1.4mm 0 0; font: 600 5.6pt "JetBrains Mono"; letter-spacing: .22em; color: var(--muted); }
+.jp-role { margin: 3mm 0 0; font-family: "Zen Kaku Gothic New"; font-weight: 700; font-size: 7.2pt; color: var(--paper); display: flex; align-items: center; gap: 1.4mm; }
+.jp-role::before { content: ""; width: 1.5mm; height: 1.5mm; background: var(--crimson); transform: rotate(45deg); flex: none; }
+.jp-desc { margin: 1.2mm 0 0; font-family: "Zen Kaku Gothic New"; font-weight: 500; font-size: 6.8pt; line-height: 1.5; color: var(--muted); max-width: 61mm; }
+.jp-desc b { color: var(--paper); font-weight: 700; }
+.status { margin: 1.6mm 0 0; display: inline-flex; align-items: center; gap: 1.3mm; font: 700 6.6pt "Archivo"; letter-spacing: .02em; color: #b9f5cf; padding: .7mm 2.4mm .7mm 2mm; background: linear-gradient(105deg, #6fd99a 0 1.3mm, rgba(111, 217, 154, .12) 1.3mm); clip-path: polygon(1.2mm 0, 100% 0, calc(100% - 1.2mm) 100%, 0 100%); }
+.status.jp { font-family: "Zen Kaku Gothic New"; font-weight: 700; font-size: 7pt; letter-spacing: .04em; }
+.contact.jp { font-family: "Archivo", "Zen Kaku Gothic New"; }
+</style>
+</head>
+<body>
+
+<!-- FRONT: English -->
+<section class="card">
+  <div class="zig"></div>
+  <div class="safe">
+    <img class="mark" src="../docs/assets/brand/hikalith-mark.png" alt="">
+    <div class="hanko">サ<br>ブ<br>リ</div>
+    <h1 class="name">Sabri<br>Mohamadi</h1>
+    <p class="aka"><span>aka</span>Hikali</p>
+    <p class="role">Freelance Producer · Game Designer</p>
+    <p class="desc">Ex-Global Associate Producer, <b>Little Nightmares</b><br>Bandai Namco Entertainment Europe</p>
+    <p class="status">Based in Tokyo · Open to new roles</p>
+    <ul class="contact">
+      <li>sabri.mohamadi@outlook.fr</li>
+      <li>+81 70-9163-3522</li>
+      <li>sabri-mohamadi.fr</li>
+    </ul>
+    <div class="qr"><div class="code"><img src="qr-en.svg" alt=""></div><span>Portfolio</span></div>
+  </div>
+</section>
+
+<!-- BACK: Japanese -->
+<section class="card">
+  <div class="zig"></div>
+  <div class="safe">
+    <img class="mark" src="../docs/assets/brand/hikalith-mark.png" alt="">
+    <div class="hanko">サ<br>ブ<br>リ</div>
+    <h1 class="kana">サブリ・モハマディ</h1>
+    <p class="jp-role">フリーランス プロデューサー／ゲームデザイナー（プランナー）</p>
+    <p class="jp-desc">元バンダイナムコエンターテインメント ヨーロッパ<br><b>『リトルナイトメア』</b>シリーズ<br>グローバル アソシエイトプロデューサー</p>
+    <p class="status jp">東京在住・転職活動中</p>
+    <ul class="contact jp">
+      <li>sabri.mohamadi@outlook.fr</li>
+      <li>070-9163-3522</li>
+      <li>sabri-mohamadi.fr/ja/</li>
+    </ul>
+    <div class="qr"><div class="code"><img src="qr-ja.svg" alt=""></div><span>ポートフォリオ</span></div>
+  </div>
+</section>
+
+</body>
+</html>

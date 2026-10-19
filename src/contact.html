@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESC}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{URL}}">
+<meta property="og:locale" content="{{LOCALE}}">
+<meta property="og:image" content="https://www.sabri-mohamadi.fr/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="{{URL}}">
+{{HREFLANG}}
+<link rel="icon" href="assets/brand/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#0b1430">
+<link rel="preload" href="fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="contact">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <a class="brand" href="index.html" aria-label="Sabri Mohamadi, home">
+    <img src="assets/brand/hikalith-mark.png" alt="" width="34" height="34">
+    <span>Sabri Mohamadi</span>
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span><span></span></button>
+  <nav class="nav-links" id="site-nav" aria-label="Sections">
+    <a href="index.html#shipped" data-i18n="nav.shipped">Shipped</a>
+    <a href="index.html#career" data-i18n="nav.career">Career</a>
+    <a href="index.html#projects" data-i18n="nav.projects">Projects</a>
+    <a href="index.html#hikali">Hikali</a>
+    <a href="index.html#japan" data-i18n="nav.japan">Japan</a>
+    <a href="contact.html" aria-current="page" data-i18n="nav.contact">Contact</a>
+  </nav>
+  <nav class="lang" aria-label="Language">{{LANGLINKS}}</nav>
+</header>
+
+<main class="page-contact" id="main">
+  <div>
+    <p class="eyebrow"><span class="dot"></span><span data-i18n="hero.eyebrow">Producer · Game Designer · Tokyo</span></p>
+    <h1 data-i18n="cp.title">Contact</h1>
+    <p class="intro" data-i18n="cp.intro">A role to fill, a freelance mission, a YouTube collab with I am Hika or just a question? Write to me. I answer fast, in English, French or Japanese.</p>
+    <ul class="direct">
+      <li><a href="mailto:sabri.mohamadi@outlook.fr">sabri.mohamadi@outlook.fr</a></li>
+      <li><a href="https://www.linkedin.com/in/sabri-mohamadi-4910741a1/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://x.com/Iamhikali" target="_blank" rel="noopener">X · @Iamhikali</a></li>
+      <li><a href="https://www.youtube.com/@IamHika" target="_blank" rel="noopener">YouTube · I am Hika</a></li>
+      <li><span data-i18n="cp.where">Based in Tokyo (JST)</span></li>
+    </ul>
+    <div class="cta">
+      <a class="btn" href="assets/cv/Sabri_Mohamadi_CV_EN.pdf" download>CV (EN) ↓</a>
+      <a class="btn" href="assets/cv/Sabri_Mohamadi_Shokumu_Keirekisho_JA.pdf" download>職務経歴書 ↓</a>
+    </div>
+  </div>
+
+  <form class="form" id="contact-form" data-sending="{{t:cp.sending}}" data-ok="{{t:cp.ok}}" data-err="{{t:cp.err}}" data-activate="{{t:cp.activate}}" action="https://formsubmit.co/sabri.mohamadi@outlook.fr" method="POST">
+    <input type="hidden" name="_subject" value="Portfolio contact">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="row">
+      <div class="field"><label for="f-name" data-i18n="cp.name">Name</label><input id="f-name" name="name" type="text" required autocomplete="name"></div>
+      <div class="field"><label for="f-email" data-i18n="cp.email">Email</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+    </div>
+    <div class="row">
+      <div class="field"><label for="f-company" data-i18n="cp.company">Company or studio</label><input id="f-company" name="company" type="text" autocomplete="organization"></div>
+      <div class="field"><label for="f-topic" data-i18n="cp.topic">Subject</label>
+        <select id="f-topic" name="topic">
+          <option value="Job opportunity" data-i18n="cp.t1">Job opportunity</option>
+          <option value="Freelance / consulting" data-i18n="cp.t2">Freelance or consulting</option>
+          <option value="YouTube collab (I am Hika)" data-i18n="cp.t3">YouTube collab (I am Hika)</option>
+          <option value="Other" data-i18n="cp.t4">Something else</option>
+        </select>
+      </div>
+    </div>
+    <div class="field"><label for="f-msg" data-i18n="cp.message">Message</label><textarea id="f-msg" name="message" required></textarea></div>
+    <button class="btn btn-primary" type="submit" data-i18n="cp.send">Send</button>
+    <p class="form-status" role="status" aria-live="polite"></p>
+  </form>
+</main>
+
+<footer class="footer">
+  <span>© 2026 Sabri Mohamadi · Hikali</span>
+  <span class="footer-brand"><img src="assets/brand/hikalith-lockup.png" alt="Hikalith" width="109" height="35"></span>
+  <span lang="ja">東京 · ゲームプロデューサー / ゲームデザイナー</span>
+</footer>
+
+<script src="site.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>

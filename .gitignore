@@ -1,0 +1,14 @@
+cv/preview-*.png
+node_modules/
+cv/private.json
+cv/.rirekisho-filled.html
+PDF/Sabri_Mohamadi_Rirekisho_JA.pdf
+backup/
+
+# Private job-search material: kept out of this public repo
+candidatures/
+PDF/
+STRATEGIE_JAPON.md
+HEBERGEMENT.md
+cv/rirekisho-ja.html
+cv/rirekisho.mjs

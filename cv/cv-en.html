@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sabri Mohamadi, CV</title>
+<link rel="stylesheet" href="fonts/zk/all.css">
+<style>
+@font-face { font-family: "Archivo"; src: url(fonts/archivo-latin-wdth-normal.woff2) format("woff2-variations"); font-weight: 100 900; font-stretch: 62% 125%; }
+@font-face { font-family: "Archivo"; src: url(fonts/archivo-latin-ext-wdth-normal.woff2) format("woff2-variations"); font-weight: 100 900; font-stretch: 62% 125%; unicode-range: U+0100-024F, U+1E00-1EFF; }
+@font-face { font-family: "JetBrains Mono"; src: url(fonts/jetbrains-mono-latin-wght-normal.woff2) format("woff2-variations"); font-weight: 100 800; }
+@font-face { font-family: "Baloo 2"; src: url(fonts/baloo-2-latin-wght-normal.woff2) format("woff2-variations"); font-weight: 400 800; }
+@page { size: A4; margin: 0; }
+:root { --navy: #0f2150; --ink: #141c33; --muted: #5b6684; --line: #e2e6ef; --gem: #b8263c; --gold: #9a7417; --side: #f2f4f9; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: #fff; }
+body { width: 210mm; height: 297mm; overflow: hidden; font-family: "Archivo", "Zen Kaku Gothic New", sans-serif; color: var(--ink); font-size: 8.1pt; line-height: 1.4; }
+.page { display: grid; grid-template-columns: 1fr 62mm; grid-template-rows: 297mm; height: 297mm; overflow: hidden; }
+main { padding: 9mm 9mm 7mm 12mm; }
+aside { position: relative; background: var(--side); color: var(--ink); padding: 9mm 8mm 7mm 8mm; display: flex; flex-direction: column; gap: 3.7mm; }
+aside::before { content: ""; position: absolute; left: -2.4mm; top: 0; bottom: 0; width: 2.4mm; background: conic-gradient(from 225deg at 100% 50%, var(--side) 90deg, transparent 0) 0 0 / 2.4mm 4.8mm repeat-y; }
+
+header { position: relative; margin-bottom: 3.5mm; }
+.name { margin: 0; font-weight: 900; font-stretch: 125%; text-transform: uppercase; font-size: 23pt; line-height: .9; letter-spacing: -.01em; color: var(--navy); }
+.kana { font-family: "Zen Kaku Gothic New"; font-weight: 700; font-size: 9pt; color: var(--muted); letter-spacing: .2em; margin-top: 1.6mm; }
+.role { margin: 2mm 0 0; font-weight: 800; font-stretch: 110%; font-size: 9.6pt; text-transform: uppercase; letter-spacing: .05em; color: var(--gem); }
+.role .aka { font: 800 10pt "Baloo 2"; text-transform: none; letter-spacing: 0; color: var(--gold); margin-left: 2mm; }
+.status { display: inline-flex; align-items: center; gap: 1.6mm; margin-top: 2.2mm; font: 600 7.1pt "JetBrains Mono"; padding: .9mm 2.6mm; border: .3mm solid #9bd3ae; color: #237145; border-radius: 10mm; }
+.status::before { content: ""; width: 1.5mm; height: 1.5mm; transform: rotate(45deg); background: #3e9a56; }
+
+h2 { display: flex; align-items: center; gap: 2.2mm; margin: 0 0 1.7mm; font-weight: 900; font-stretch: 118%; font-size: 9.2pt; text-transform: uppercase; letter-spacing: .05em; color: var(--navy); line-height: 1.1; }
+h2::before { content: ""; width: 2.2mm; height: 2.2mm; background: var(--gem); transform: rotate(45deg); border-radius: .3mm; flex: none; }
+h2 small { font: 500 6.8pt "JetBrains Mono"; text-transform: none; letter-spacing: 0; color: var(--muted); }
+h2::after { content: ""; flex: 1; height: .25mm; background: var(--line); }
+section { margin-bottom: 3mm; }
+.profile { margin: 0; font-size: 8.5pt; }
+.profile b, .job li b, .projline b, .small b { font-weight: 800; color: var(--navy); }
+
+.games { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2mm; }
+.game { border: .3mm solid var(--line); border-radius: 1.6mm; padding: 2.2mm 2.4mm; position: relative; overflow: hidden; background: #fff; }
+.game img { display: block; width: calc(100% + 4.8mm); margin: -2.2mm -2.4mm 1.6mm; height: 12mm; object-fit: cover; }
+.games-note { margin: 1.4mm 0 0; font-size: 7pt; color: var(--muted); }
+.g-date { font: 600 6.9pt "JetBrains Mono"; color: var(--gold); }
+.g-title { margin: .5mm 0 .3mm; font-weight: 900; font-stretch: 105%; text-transform: uppercase; font-size: 8.3pt; line-height: 1.05; color: var(--navy); }
+.g-title span { display: block; text-transform: none; font-weight: 600; font-size: 7.3pt; color: var(--muted); }
+.g-dev { font: 500 6.6pt "JetBrains Mono"; color: var(--muted); }
+.g-plat { font-size: 6.8pt; color: var(--muted); margin-top: .5mm; line-height: 1.3; }
+
+.job { margin-bottom: 2.2mm; }
+.job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 3mm; }
+.job-title { font-weight: 800; font-stretch: 106%; font-size: 9.5pt; color: var(--navy); line-height: 1.2; }
+.job-title em { font-style: normal; font-weight: 600; color: var(--muted); }
+.job-when { font: 600 6.9pt "JetBrains Mono"; color: var(--gold); white-space: nowrap; }
+.job-where { font: 500 6.8pt "JetBrains Mono"; color: var(--muted); margin: .2mm 0 .7mm; }
+.job ul { margin: 0; padding-left: 3.6mm; list-style: none; }
+.job li { margin: .25mm 0; position: relative; }
+.job li::before { content: ""; position: absolute; left: -3.2mm; top: 1.3mm; width: 1.3mm; height: 1.3mm; background: var(--gem); transform: rotate(45deg); }
+
+.projline { margin: 0; font-size: 8pt; } .projline span { color: var(--muted); }
+
+aside h3 { margin: 0 0 1.8mm; font: 700 7pt "JetBrains Mono"; text-transform: uppercase; letter-spacing: .12em; color: var(--gem); display: flex; align-items: center; gap: 1.6mm; }
+aside h3::before { content: ""; width: 1.6mm; height: 1.6mm; background: var(--gem); transform: rotate(45deg); }
+.contact { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.2mm; font-size: 7.8pt; font-weight: 500; }
+.contact li { display: grid; grid-template-columns: 4mm 1fr; align-items: center; word-break: break-word; }
+.contact i { font-style: normal; width: 1.6mm; height: 1.6mm; background: var(--navy); transform: rotate(45deg); display: block; }
+.contact a { color: inherit; text-decoration: none; }
+.pills { display: flex; flex-wrap: wrap; gap: 1.1mm; }
+.pills span { display: inline-flex; align-items: center; gap: 1.2mm; font-size: 7pt; font-weight: 600; padding: .45mm 2mm .45mm 1.6mm; border-radius: 3mm; background: #fff; border: .25mm solid #d5dcec; color: var(--ink); }
+.pills span::before { content: ""; width: 1mm; height: 1mm; background: currentColor; transform: rotate(45deg); opacity: .75; }
+.pills.red span { background: #fbe8eb; border-color: #f1c5cd; color: #8e1d30; }
+.pills.yel span { background: #fbf3dd; border-color: #ecdcaa; color: #6e5410; }
+.pills.blue span { background: #e6ecf8; border-color: #c8d3ea; color: #142a5c; }
+.langs { display: grid; gap: 2mm; }
+.l-row { display: flex; justify-content: space-between; font-size: 7.8pt; font-weight: 800; }
+.l-row span { font-weight: 600; color: var(--muted); font-size: 7.2pt; }
+.bar { height: 1.3mm; background: #d9e0ee; border-radius: 1mm; margin-top: .7mm; overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--navy); border-radius: 1mm; }
+.l-note { font-size: 7pt; color: var(--muted); margin-top: .6mm; line-height: 1.35; }
+.edu { display: grid; gap: 2mm; font-size: 7.8pt; }
+.edu b { display: block; font-weight: 800; line-height: 1.25; }
+.edu span { color: var(--muted); font-size: 7.2pt; }
+.small { font-size: 7.6pt; color: var(--ink); margin: 0; }
+.mark { position: absolute; right: 0; top: -1mm; width: 17mm; height: 17mm; }
+.hanko { position: absolute; right: 19mm; top: 1mm; font-family: "Zen Kaku Gothic New"; font-weight: 700; color: var(--gem); border: .6mm solid var(--gem); border-radius: 1mm; padding: 1mm .9mm; font-size: 8pt; line-height: 1.1; text-align: center; transform: rotate(5deg); }
+</style>
+</head>
+<body>
+<div class="page">
+<main>
+  <header>
+    <h1 class="name">Sabri<br>Mohamadi</h1>
+    <div class="kana">サブリ・モハマディ</div>
+    <p class="role">Producer · Game Designer <span class="aka">aka Hikali</span></p>
+    <div class="status">Based in Tokyo · Available now</div>
+    <div class="hanko">サ<br>ブ<br>リ</div>
+    <img class="mark" src="../docs/assets/brand/hikalith-mark.png" alt="">
+  </header>
+
+  <section>
+    <h2>Profile</h2>
+    <p class="profile">I was <b>Global Associate Producer at Bandai Namco Entertainment Europe</b> on the <b>Little Nightmares</b> franchise, in the main team that drove its worldwide strategy. Three games shipped on console, PC, VR and mobile. Today I'm a <b>freelance Producer and Game Designer</b> and I teach from first-year Bachelor to second-year Master. I started out as a programmer, I still code my own prototypes, and I live in Tokyo, where I also make videos about games and Japan as <b>Hikali</b>.</p>
+  </section>
+
+  <section>
+    <h2>Shipped titles <small>Bandai Namco Entertainment Europe, publisher side</small></h2>
+    <div class="games">
+      <div class="game">
+        <img src="../docs/assets/img/ln3.jpg" alt="">
+        <div class="g-date">10 OCT 2025</div>
+        <div class="g-title">Little Nightmares III</div>
+        <div class="g-dev">dev · Supermassive Games</div>
+        <div class="g-plat">PS5 · PS4 · Xbox Series X|S · Xbox One · PC · Switch · Switch 2</div>
+      </div>
+      <div class="game">
+        <img src="../docs/assets/img/lnvr.jpg" alt="">
+        <div class="g-date">24 APR 2026</div>
+        <div class="g-title">Little Nightmares VR<span>Altered Echoes</span></div>
+        <div class="g-dev">dev · Iconik</div>
+        <div class="g-plat">PS VR2 · Meta Quest · SteamVR</div>
+      </div>
+      <div class="game">
+        <img src="../docs/assets/img/ln1.jpg" alt="">
+        <div class="g-date">12 DEC 2023</div>
+        <div class="g-title">Little Nightmares<span>Mobile port</span></div>
+        <div class="g-dev">port · Playdigious</div>
+        <div class="g-plat">iOS · Android</div>
+      </div>
+    </div>
+    <p class="games-note">Shipped on 12 platforms: PS5, PS4, Xbox Series, Xbox One, Switch, Switch 2, PC, iOS, Android, PS VR2, Meta Quest and SteamVR. The Little Nightmares series has sold over 20 million copies across all titles (Bandai Namco, June 2025). Images © Bandai Namco Entertainment Europe.</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="job">
+      <div class="job-head"><div class="job-title">Freelance Producer &amp; Game Designer <em>· Hikalith</em></div><div class="job-when">JAN 2025 – NOW</div></div>
+      <div class="job-where">Lyon, then Tokyo</div>
+      <ul>
+        <li>Studios bring me in to reinforce production. I coordinate, report and set up their <b>project tracking</b> on Jira, SharePoint and Teams.</li>
+        <li>I support their game design on prototypes, mechanics and player experience, and advise them on <b>game accessibility</b>.</li>
+        <li>I'm <b>producer and business developer</b> for the Hiqub collective.</li>
+        <li>I <b>teach Producing, Game Design, Level Design and programming fundamentals</b>, from Bachelor 1 to Master 2, at Ynov Campus Lyon and Ynov Connect, and consult for the school.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head"><div class="job-title">Global Associate Producer <em>· Bandai Namco Entertainment Europe</em></div><div class="job-when">JUL 2023 – JUL 2025</div></div>
+      <div class="job-where">Lyon, France · Little Nightmares franchise</div>
+      <ul>
+        <li>Member of the main team that drove the franchise's <b>worldwide strategy</b> on Little Nightmares III, Little Nightmares VR: Altered Echoes and the mobile port.</li>
+        <li>Worked with <b>Supermassive Games, Iconik and Playdigious</b>, ports with <b>Engine Software</b>, plus playtest and service vendors.</li>
+        <li>Planned milestones, tracked deliveries and kept QA, analytics, localisation, marketing and communication aligned, then reported to stakeholders and IP holders.</li>
+        <li>Rebuilt our tracking on Jira, Confluence and SharePoint and <b>automated a weekly report that took a full day</b>.</li>
+        <li>Sat on Bandai Namco Europe's <b>accessibility task force</b>, benchmarked the industry and wrote the team's <b>must-have accessibility document</b>. Turned an accessibility audit into a prioritised backlog that shipped.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head"><div class="job-title">Production Lead, games incubator <em>· Nightmare Games (Ynov)</em></div><div class="job-when">2022 – 2023 · 6 MO</div></div>
+      <ul>
+        <li>Ran the schedule for <b>six game projects and about forty people</b> and coached their leads, some of whom later became my first clients.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head"><div class="job-title">Earlier <em>· work-study during my degrees</em></div><div class="job-when">2020 – 2022</div></div>
+      <ul>
+        <li><b>Consultant &amp; Trainer at Inov'Xper</b> (2021–22), automating client processes with Microsoft 365 and Power Automate. <b>Developer at Boa Concept</b> (2020–21), building UI and internal tools.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Own projects</h2>
+    <p class="projline"><b>NaJiKi</b> <span>(2024, horror, Unity, on hold)</span>, which I designed and produced. It went through several pitch competitions and <b>won funding support on Maghla's show</b>. <b>MyHome?</b> <span>(2020, Bachelor year 3, escape game, Unreal)</span> as technical game designer, plus the jam games <b>The Last Supermarket Before Apocalypse</b> and <b>Le voyage de Mochihiro</b>.</p>
+  </section>
+</main>
+
+<aside>
+  <div>
+    <h3>Contact</h3>
+    <ul class="contact">
+      <li><i></i>Nakano, Tokyo</li>
+      <li><i></i>+81 70-9163-3522</li>
+      <li><i></i><a href="mailto:sabri.mohamadi@outlook.fr">sabri.mohamadi@outlook.fr</a></li>
+      <li><i></i><a href="https://www.sabri-mohamadi.fr">sabri-mohamadi.fr</a></li>
+      <li><i></i><a href="https://www.linkedin.com/in/sabri-mohamadi-4910741a1/">in/sabri-mohamadi-4910741a1</a></li>
+      <li><i></i><a href="https://hikalight.itch.io/">hikalight.itch.io</a></li>
+      <li><i></i><a href="https://www.youtube.com/@IamHika">youtube.com/@IamHika</a></li>
+    </ul>
+  </div>
+  <div>
+    <h3>Languages</h3>
+    <div class="langs">
+      <div><div class="l-row">French <span>Native</span></div><div class="bar"><i style="width:100%"></i></div></div>
+      <div><div class="l-row">English <span>C1, used daily</span></div><div class="bar"><i style="width:88%"></i></div></div>
+      <div><div class="l-row">Japanese <span>Conversational</span></div><div class="bar"><i style="width:55%"></i></div>
+        <div class="l-note">I understand most spoken Japanese and speak at around B1. I'm taking classes in Tokyo for reading and writing.</div></div>
+    </div>
+  </div>
+  <div>
+    <h3>Production</h3>
+    <div class="pills red"><span>Milestone planning</span><span>Worldwide strategy</span><span>External studios</span><span>Risk registers</span><span>Scope arbitration</span><span>Reporting</span><span>Agile</span><span>Accessibility</span></div>
+  </div>
+  <div>
+    <h3>Tools</h3>
+    <div class="pills yel"><span>Jira</span><span>Confluence</span><span>Notion</span><span>SharePoint</span><span>Teams</span><span>Perforce</span><span>Git</span><span>Microsoft 365</span><span>Power Automate</span></div>
+  </div>
+  <div>
+    <h3>Technical</h3>
+    <div class="pills blue"><span>Unity · C#</span><span>Unreal · Blueprints</span><span>C++</span><span>C</span><span>.NET</span></div>
+  </div>
+  <div>
+    <h3>Education</h3>
+    <div class="edu">
+      <div><b>Master level, Game Programming &amp; Design</b><span>Ynov Campus Lyon · RNCP level 7 · 2021–23</span></div>
+      <div><b>Licence Pro, Project Mgmt &amp; Interactive 3D</b><span>Université Clermont Auvergne (Bachelor's) · 2020–21</span></div>
+      <div><b>BTS, Digital Systems (IT &amp; Networks)</b><span>2-year technical degree · 2018–20</span></div>
+    </div>
+  </div>
+  <div>
+    <h3>Hikali, off the clock</h3>
+    <p class="small">On my YouTube channel <b>I am Hika</b> I show life in Japan and places tied to games, and I stream on Twitch. I'm preparing a series of interviews with indie studios in Japan.</p>
+  </div>
+</aside>
+</div>
+</body>
+</html>
