@@ -112,7 +112,7 @@ html[lang="ja"] .lead { font-size: clamp(16px, 1.4vw, 18px); }
 .chips li {
   --facet: var(--gold);
   font: 700 12px var(--sans); text-transform: uppercase; letter-spacing: .08em; color: var(--text);
-  padding: 8px 18px 8px 24px;
+  padding: 8px 18px 8px 24px; line-height: 17px;
   background: linear-gradient(105deg, var(--facet) 0 11px, rgba(255,255,255,.07) 11px);
   clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
 }
@@ -123,7 +123,7 @@ html[lang="ja"] .chips li { font-family: var(--jp); letter-spacing: .04em; text-
   --f1: #27498f; --f2: #1b3570;
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   padding: 14px 30px; border: 0; cursor: pointer; text-decoration: none;
-  font: 800 15px var(--sans); letter-spacing: .02em; color: #fff;
+  font: 800 15px var(--sans); line-height: 19px; letter-spacing: .02em; color: #fff;
   background: linear-gradient(162deg, var(--f1) 0 50%, var(--f2) 50% 100%);
   clip-path: polygon(14px 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 14px 100%, 0 50%);
   transition: transform .15s, filter .2s;
@@ -159,11 +159,11 @@ html[lang="ja"] .section-head h2 { text-transform: none; letter-spacing: .04em; 
 
 /* SHIPPED */
 .shipped { display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 16px; }
-.game { position: relative; display: flex; flex-direction: column; padding: 0 22px 26px; overflow: hidden; background: linear-gradient(165deg, #3a1530, var(--ink-2) 70%); border: 1px solid rgba(198, 42, 67, .4); border-radius: var(--radius); transition: transform .25s, border-color .25s; }
+.game { position: relative; display: grid; grid-row: span 7; grid-template-rows: subgrid; row-gap: 0; padding: 0 22px 26px; overflow: hidden; background: linear-gradient(165deg, #3a1530, var(--ink-2) 70%); border: 1px solid rgba(198, 42, 67, .4); border-radius: var(--radius); transition: transform .25s, border-color .25s; }
 .game::before { content: ""; position: absolute; left: 22px; bottom: 0; width: 46px; height: 5px; background: var(--gold); }
 .game:hover { transform: translateY(-4px); border-color: rgba(233, 185, 73, .45); }
-.game-img { display: block; width: calc(100% + 44px); max-width: none; margin: 0 -22px 16px; aspect-ratio: 16 / 9; height: auto; object-fit: cover; border-bottom: 1px solid var(--line); }
-.game-top { display: flex; justify-content: space-between; align-items: center; padding-bottom: 12px; }
+.game-img { display: block; width: calc(100% + 44px); max-width: none; margin: 0 -22px 16px; height: clamp(170px, 16vw, 200px); object-fit: cover; border-bottom: 1px solid var(--line); }
+.game-top { display: flex; justify-content: space-between; align-items: center; align-self: start; padding-bottom: 12px; }
 .game-date { font: 600 13px var(--mono); color: var(--gold); }
 .game-tag { font: 500 11px var(--mono); text-transform: uppercase; letter-spacing: .1em; padding: 4px 8px; border: 1px solid var(--line); border-radius: 3px; color: var(--muted); }
 html[lang="ja"] .game-tag { font-family: var(--jp); }
@@ -172,9 +172,9 @@ html[lang="ja"] .game-tag { font-family: var(--jp); }
 .game-dev { margin: 0 0 14px; font: 500 13px var(--mono); color: var(--muted); }
 html[lang="ja"] .game-dev { font-family: var(--jp); }
 .game-role { margin: 0 0 18px; font-size: 15px; }
-.plats { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; padding: 0; margin: auto 0 0; }
+.plats { display: flex; flex-wrap: wrap; align-content: flex-end; gap: 6px; list-style: none; padding: 0; margin: 0; }
 .plats li { font: 500 11px var(--mono); padding: 3px 7px; background: rgba(255,255,255,.06); border-radius: 3px; color: var(--muted); }
-.game-link { margin-top: 16px; align-self: flex-start; font: 600 12px var(--mono); color: var(--gold); text-decoration: none; }
+.game-link { margin-top: 16px; justify-self: start; align-self: start; font: 600 12px var(--mono); color: var(--gold); text-decoration: none; }
 .game-link:hover { text-decoration: underline; }
 .gallery { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 16px; margin-top: 16px; }
 .gallery img { width: 100%; height: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius); border: 1px solid var(--line); }
@@ -329,7 +329,7 @@ html[lang="ja"] .field label { font-family: var(--jp); letter-spacing: .02em; }
 .form .btn { justify-self: start; }
 
 /* FOOTER */
-.footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; padding: 26px var(--gutter); border-top: 1px solid var(--line); font: 500 12px var(--mono); color: var(--muted); background: rgba(4, 8, 24, .45); }
+.footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; padding: 26px max(var(--gutter), calc((100% - var(--max)) / 2 + var(--gutter))); border-top: 1px solid var(--line); font: 500 12px var(--mono); color: var(--muted); background: rgba(4, 8, 24, .45); }
 .footer-brand { display: flex; align-items: center; gap: 8px; color: #fff; font-weight: 800; font-size: 18px; text-decoration: none; }
 .footer-brand img { width: auto; height: 34px; }
 .footer [lang="ja"] { font-family: var(--jp); }
@@ -354,7 +354,7 @@ html[lang="ja"] .field label { font-family: var(--jp); letter-spacing: .02em; }
 @media (max-width: 1000px) {
   .shipped { grid-template-columns: 1fr 1fr; }
   .game-lead { grid-column: 1 / -1; }
-  .game-lead .game-img { aspect-ratio: 21 / 9; }
+  .game-lead .game-img { height: auto; aspect-ratio: 21 / 9; }
   .craft { grid-template-columns: 1fr 1fr; }
   .craft article:nth-child(3) { padding-left: 0; border-left: 0; }
   .craft article:nth-child(n+3) { border-top: 1px solid var(--line); }
@@ -385,7 +385,7 @@ html[lang="ja"] .field label { font-family: var(--jp); letter-spacing: .02em; }
   .shipped, .projects, .jams, .craft { grid-template-columns: 1fr; }
   .gallery { grid-template-columns: 1fr 1fr; }
   .gallery img:first-child { grid-column: 1 / -1; }
-  .game-lead .game-img { aspect-ratio: 16 / 9; }
+  .game-img, .game-lead .game-img { height: auto; aspect-ratio: 16 / 9; }
   .craft article, .craft article + article { padding-left: 0; border-left: 0; }
   .craft article + article { border-top: 1px solid var(--line); }
   .timeline > li { grid-template-columns: 1fr; gap: 8px; }
@@ -403,4 +403,8 @@ html[lang="ja"] .spotlight h3 { font-family: var(--jp); text-transform: none; }
 .spot-body .pills { margin-top: 18px; }
 @media (max-width: 760px) {
   .spotlight { grid-template-columns: 1fr; padding: 24px 20px 30px; }
+}
+@media (min-width: 761px) {
+  .footer { display: grid; grid-template-columns: 1fr auto 1fr; }
+  .footer > :last-child { justify-self: end; text-align: right; }
 }
