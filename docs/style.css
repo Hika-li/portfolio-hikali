@@ -159,7 +159,7 @@ html[lang="ja"] .section-head h2 { text-transform: none; letter-spacing: .04em; 
 
 /* SHIPPED */
 .shipped { display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 16px; }
-.game { position: relative; display: grid; grid-row: span 7; grid-template-rows: subgrid; row-gap: 0; padding: 0 22px 26px; overflow: hidden; background: linear-gradient(165deg, #3a1530, var(--ink-2) 70%); border: 1px solid rgba(198, 42, 67, .4); border-radius: var(--radius); transition: transform .25s, border-color .25s; }
+.game { position: relative; display: grid; grid-row: span 8; grid-template-rows: subgrid; row-gap: 0; padding: 0 22px 26px; overflow: hidden; background: linear-gradient(165deg, #3a1530, var(--ink-2) 70%); border: 1px solid rgba(198, 42, 67, .4); border-radius: var(--radius); transition: transform .25s, border-color .25s; }
 .game::before { content: ""; position: absolute; left: 22px; bottom: 0; width: 46px; height: 5px; background: var(--gold); }
 .game:hover { transform: translateY(-4px); border-color: rgba(233, 185, 73, .45); }
 .game-img { display: block; width: calc(100% + 44px); max-width: none; margin: 0 -22px 16px; height: clamp(170px, 16vw, 200px); object-fit: cover; border-bottom: 1px solid var(--line); }
@@ -169,18 +169,16 @@ html[lang="ja"] .section-head h2 { text-transform: none; letter-spacing: .04em; 
 html[lang="ja"] .game-tag { font-family: var(--jp); }
 .game h3 { margin: 0 0 8px; font-weight: 900; font-stretch: 112%; text-transform: uppercase; font-size: clamp(22px, 2.3vw, 30px); line-height: 1; color: var(--paper); }
 .game h3 span { display: block; font-size: .55em; font-weight: 600; text-transform: none; color: var(--muted); margin-top: 6px; letter-spacing: 0; }
-.game-head { margin: 0 0 8px; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
-.game-head h3 { margin-bottom: 4px; }
 .sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
 /* Award laurels: festival-poster style, two mirrored branches around a three-line label */
 .laurels { display: flex; flex-wrap: wrap; gap: 14px 30px; }
-.laurels.stack { flex-direction: column; gap: 12px; margin: 4px 0 8px; }
-.laurels.stack .lt { max-width: 200px; }
-.laurel { display: inline-flex; align-items: center; gap: 8px; max-width: 100%; color: var(--gold); text-decoration: none; transition: filter .25s ease, transform .25s ease; }
+.laurels.stack { flex-direction: column; gap: 14px; align-self: start; margin: 0 0 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+.laurels.stack .lt { max-width: 178px; }
+.laurel { display: inline-flex; align-items: center; gap: 4px; max-width: 100%; color: var(--gold); text-decoration: none; transition: filter .25s ease, transform .25s ease; }
 .laurel .lr { width: 20px; height: 50px; flex: none; }
 .laurel .lr.flip { transform: scaleX(-1); }
 .laurel .lt { display: flex; flex-direction: column; align-items: center; text-align: center; min-width: 0; line-height: 1.15; }
-.laurel .lk { font: 700 9px var(--mono); letter-spacing: .3em; margin-right: -.3em; text-transform: uppercase; color: var(--gold); }
+.laurel .lk { font: 700 11px var(--mono); letter-spacing: .24em; margin-right: -.24em; text-transform: uppercase; color: var(--gold); }
 .laurel .le { font: 800 12.5px/1.15 var(--display); font-stretch: 108%; letter-spacing: .02em; text-transform: uppercase; color: var(--paper); margin: 4px 0 3px; text-wrap: balance; }
 .laurel .lc { font: 500 11.5px/1.3 var(--body); color: var(--muted); text-wrap: balance; }
 .laurel.win .lk { color: #ffd76a; }
@@ -192,6 +190,7 @@ html[lang="ja"] .laurel .lk, html[lang="ja"] .laurel .lc { font-family: var(--jp
 .hero-awards .laurel .lr { width: 24px; height: 60px; }
 .hero-awards .laurel .le { font-size: clamp(13px, 1.25vw, 15px); }
 .hero-awards .laurel .lc { font-size: 12.5px; }
+.hero-awards .laurel .lk { font-size: 12px; }
 .tga-line { margin: 0 0 12px; font: 500 13px/1.5 var(--mono); letter-spacing: .02em; color: var(--muted); max-width: 640px; }
 html[lang="ja"] .tga-line { font-family: var(--jp); }
 .hero-awards + .lead { margin-top: 28px; }
