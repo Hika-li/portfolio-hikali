@@ -177,7 +177,11 @@
     "aw.winner": "Winner",
     "aw.tga.cat": "Best VR/AR Game",
     "aw.hga.cat": "Best VR Horror Game",
-    "aw.pg.cat": "Best Platform Game"
+    "aw.pg.cat": "Best Platform Game",
+    "aw.selection": "Official Selection",
+    "aw.venice.cat": "Best of Experiences",
+    "aw.gc.cat": "Best Visuals, Audio & Xbox Game",
+    "aw.hga25.cat": "Most Accessible Horror Game"
   },
   "ja": {
     "meta.title": "サブリ・モハマディ | プロデューサー / ゲームデザイナー",
@@ -334,7 +338,11 @@
     "aw.winner": "受賞",
     "aw.tga.cat": "ベストVR/AR部門",
     "aw.hga.cat": "ベストVRホラー部門",
-    "aw.pg.cat": "ベストプラットフォームゲーム部門"
+    "aw.pg.cat": "ベストプラットフォームゲーム部門",
+    "aw.selection": "オフィシャルセレクション",
+    "aw.venice.cat": "Best of Experiences部門",
+    "aw.gc.cat": "ベストビジュアル・オーディオ・Xboxの3部門",
+    "aw.hga25.cat": "最もアクセシブルなホラーゲーム部門"
   },
   "fr": {
     "meta.title": "Sabri Mohamadi | Producer & Game Designer",
@@ -491,6 +499,10 @@
     "aw.winner": "Lauréat",
     "aw.tga.cat": "Meilleur jeu VR/AR",
     "aw.hga.cat": "Meilleur jeu d'horreur VR",
-    "aw.pg.cat": "Meilleur jeu de plateforme"
+    "aw.pg.cat": "Meilleur jeu de plateforme",
+    "aw.selection": "Sélection officielle",
+    "aw.venice.cat": "Best of Experiences",
+    "aw.gc.cat": "Meilleurs visuels, son et jeu Xbox",
+    "aw.hga25.cat": "Jeu d'horreur le plus accessible"
   }
 }
