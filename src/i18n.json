@@ -34,10 +34,7 @@
     "hero.chip1": "Based in Tokyo",
     "hero.chip2": "Available now",
     "hero.chip3": "FR · EN · 日本語",
-    "tga.badge": "TGA 2026 Nominee · Best VR/AR",
-    "award.hga": "Horror Game Awards 2026 Nominee · Best VR Horror",
-    "award.mobile": "Pocket Gamer Awards 2024 · Best Platform Game",
-    "tga.line": "Little Nightmares VR: Altered Echoes, where I was Global Associate Producer, is <a href=\"https://thegameawards.com/categories/best-vr-ar\" target=\"_blank\" rel=\"noopener\">nominated for Best VR/AR Game at The Game Awards 2026</a>.",
+    "tga.line": "Little Nightmares VR: Altered Echoes, where I was Global Associate Producer",
     "hero.cv": "Download CV (EN)",
     "hero.contact": "Get in touch",
     "stat.titles": "games shipped",
@@ -175,7 +172,12 @@
     "career.teach.where": "Ynov Campus Lyon and Ynov Connect · teaching remotely from Tokyo",
     "career.teach.p1": "I teach Producing, Game Design, Level Design and programming fundamentals, from first-year Bachelor's to Master's level, and consult for the school.",
     "career.teach.p2": "Teaching started earlier, with a programming course on Udemy and my Hika Learn YouTube channel, then client training at Inov'Xper and volunteer workshops at Ynov during my own Master's.",
-    "career.free.p2": "I also worked with Hiqub, a collective of independent creators, as Producer and Business Developer, contributing gameplay reviews, production advice and introductions to people in my network."
+    "career.free.p2": "I also worked with Hiqub, a collective of independent creators, as Producer and Business Developer, contributing gameplay reviews, production advice and introductions to people in my network.",
+    "aw.nominee": "Nominee",
+    "aw.winner": "Winner",
+    "aw.tga.cat": "Best VR/AR Game",
+    "aw.hga.cat": "Best VR Horror Game",
+    "aw.pg.cat": "Best Platform Game"
   },
   "ja": {
     "meta.title": "サブリ・モハマディ | プロデューサー / ゲームデザイナー",
@@ -189,10 +191,7 @@
     "hero.chip1": "東京在住",
     "hero.chip2": "即日入社可",
     "hero.chip3": "FR · EN · 日本語",
-    "tga.badge": "TGA 2026 ベストVR/AR部門ノミネート",
-    "award.hga": "Horror Game Awards 2026 ベストVRホラー部門ノミネート",
-    "award.mobile": "Pocket Gamer Awards 2024 ベストプラットフォームゲーム受賞",
-    "tga.line": "私がグローバル アソシエイトプロデューサーを務めた『リトルナイトメア VR Altered Echoes』が、<a href=\"https://thegameawards.com/categories/best-vr-ar\" target=\"_blank\" rel=\"noopener\">The Game Awards 2026のベストVR/AR部門にノミネート</a>されました。",
+    "tga.line": "グローバル アソシエイトプロデューサーを務めた『リトルナイトメア VR Altered Echoes』",
     "hero.cv": "CVをダウンロード（英語）",
     "hero.contact": "お問い合わせ",
     "stat.titles": "リリースタイトル",
@@ -330,7 +329,12 @@
     "career.teach.where": "Ynov Campus リヨン校・Ynov Connect · 東京からリモートで担当",
     "career.teach.p1": "学士1年次から修士2年次までを対象に、プロデュース、ゲームデザイン、レベルデザイン、プログラミング基礎の講義を担当。学校へのコンサルティングも実施。",
     "career.teach.p2": "指導経験の原点は、Udemyのプログラミング講座とYouTubeチャンネル「Hika Learn」。その後、Inov'Xperでの顧客向け研修、修士課程在学中のYnovでのボランティアワークショップを経て現職。",
-    "career.free.p2": "インディークリエイター集団「Hiqub」では、プロデューサー兼事業開発として、ゲームプレイのレビュー、制作面での助言、人脈の紹介を担当。"
+    "career.free.p2": "インディークリエイター集団「Hiqub」では、プロデューサー兼事業開発として、ゲームプレイのレビュー、制作面での助言、人脈の紹介を担当。",
+    "aw.nominee": "ノミネート",
+    "aw.winner": "受賞",
+    "aw.tga.cat": "ベストVR/AR部門",
+    "aw.hga.cat": "ベストVRホラー部門",
+    "aw.pg.cat": "ベストプラットフォームゲーム部門"
   },
   "fr": {
     "meta.title": "Sabri Mohamadi | Producer & Game Designer",
@@ -344,10 +348,7 @@
     "hero.chip1": "Basé à Tokyo",
     "hero.chip2": "Disponible immédiatement",
     "hero.chip3": "FR · EN · 日本語",
-    "tga.badge": "Nommé TGA 2026 · Meilleur jeu VR/AR",
-    "award.hga": "Nommé Horror Game Awards 2026 · Meilleure horreur VR",
-    "award.mobile": "Pocket Gamer Awards 2024 · Meilleur jeu de plateforme",
-    "tga.line": "Little Nightmares VR: Altered Echoes, sur lequel j'étais Global Associate Producer, est <a href=\"https://thegameawards.com/categories/best-vr-ar\" target=\"_blank\" rel=\"noopener\">nommé pour le Meilleur jeu VR/AR aux The Game Awards 2026</a>.",
+    "tga.line": "Little Nightmares VR: Altered Echoes, sur lequel j'étais Global Associate Producer",
     "hero.cv": "Télécharger le CV (EN)",
     "hero.contact": "Me contacter",
     "stat.titles": "jeux sortis",
@@ -485,6 +486,11 @@
     "career.teach.where": "Ynov Campus Lyon et Ynov Connect · à distance depuis Tokyo",
     "career.teach.p1": "J'enseigne le Producing, le Game Design, le Level Design et les fondamentaux de la Programmation, du Bachelor 1 au Master 2, et j'interviens comme Consultant pour l'école.",
     "career.teach.p2": "Le goût de la transmission est plus ancien : un cours de programmation sur Udemy et la chaîne YouTube Hika Learn, des formations clients chez Inov'Xper, puis des ateliers bénévoles chez Ynov pendant mon Master.",
-    "career.free.p2": "J'ai aussi accompagné Hiqub, un collectif de créateurs indépendants, comme Producer et Business Developer, avec des reviews de gameplay, des conseils en Production et des mises en relation."
+    "career.free.p2": "J'ai aussi accompagné Hiqub, un collectif de créateurs indépendants, comme Producer et Business Developer, avec des reviews de gameplay, des conseils en Production et des mises en relation.",
+    "aw.nominee": "Nommé",
+    "aw.winner": "Lauréat",
+    "aw.tga.cat": "Meilleur jeu VR/AR",
+    "aw.hga.cat": "Meilleur jeu d'horreur VR",
+    "aw.pg.cat": "Meilleur jeu de plateforme"
   }
 }
